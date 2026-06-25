@@ -1,67 +1,33 @@
-// Perth EMDR Therapy — Main JS
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  // ─── Hamburger Menu ─────────────────────────────
-  const hamburger = document.querySelector('.hamburger');
-  const navOverlay = document.querySelector('.nav-overlay');
-  const navClose = document.querySelector('.nav-close');
-
-  if (hamburger && navOverlay) {
-    hamburger.addEventListener('click', () => {
-      navOverlay.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    });
-  }
-
-  if (navClose && navOverlay) {
-    navClose.addEventListener('click', () => {
-      navOverlay.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  }
-
-  // Close overlay on nav link click
-  document.querySelectorAll('.nav-overlay a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (navOverlay) {
-        navOverlay.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-    });
+if (hamburger && navMenu) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMenu.classList.toggle('open');
   });
+}
 
-  // ─── Contact Form ────────────────────────────────
-  const form = document.querySelector('.contact-form');
-  const successMsg = document.querySelector('.form-success');
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
 
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      form.style.display = 'none';
-      if (successMsg) {
-        successMsg.style.display = 'block';
-      }
-    });
-  }
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  // ─── Scroll Reveal ───────────────────────────────
-  const reveals = document.querySelectorAll('.reveal');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    reveals.forEach(el => observer.observe(el));
-  } else {
-    // Fallback: show all
-    reveals.forEach(el => el.classList.add('visible'));
-  }
-
-});
+// Form submit
+const form = document.getElementById('booking-form');
+const success = document.getElementById('form-success');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.style.display = 'none';
+    if (success) success.style.display = 'block';
+  });
+}

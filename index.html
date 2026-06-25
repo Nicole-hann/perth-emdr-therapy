@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perth EMDR Therapy</title>
-  <meta name="description" content="Evidence based and trauma informed care. EMDR therapy in Perth — telehealth, in-person, and at home." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perth EMDR Therapy | EMDR Therapist Perth</title>
+  <meta name="description" content="Evidence based and trauma informed EMDR therapy in Perth. Telehealth and in-person sessions available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav class="nav">
     <a href="index.html" class="nav-logo">Perth EMDR Therapy</a>
-    <button class="hamburger" aria-label="Open menu">
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Book Now</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
-  <!-- NAV OVERLAY -->
-  <div class="nav-overlay" role="dialog" aria-label="Navigation menu">
-    <button class="nav-close" aria-label="Close menu">&times;</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="index.html#services">Services</a>
-    <a href="index.html#book">Book Now</a>
-    <a href="contact.html">Contact</a>
-  </div>
-
-  <!-- HERO -->
+  <!-- HERO — split: image left, text right -->
   <section class="hero">
     <div class="hero-image">
-      <img src="images/hero-house.png" alt="Perth EMDR Therapy practice — warm welcoming space" />
+      <img src="images/hero-house.png" alt="Perth EMDR Therapy practice">
     </div>
-    <div class="hero-content">
-      <div class="hero-text reveal">
-        <h1>Therapy that supports you, one step at a time.</h1>
-        <p>Evidence based and trauma informed care. We work closely with you to create a treatment plan that feels right.</p>
-      </div>
+    <div class="hero-text">
+      <h1>Therapy that supports you, one step at a time.</h1>
+      <p>Evidence based and trauma informed care. We work closely with you to create a treatment plan that feels right.</p>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <p class="services-heading reveal">Perth EMDR Therapy</p>
+  <!-- SERVICES SECTION -->
+  <section class="services-section">
+    <h2 class="services-heading">Perth EMDR Therapy</h2>
     <div class="services-grid">
 
-      <div class="service-card reveal">
-        <img src="images/emdr-telehealth.png" alt="EMDR Telehealth" />
-        <h3>EMDR Therapy | Telehealth</h3>
-        <p class="service-price">$149.00</p>
-        <p>EMDR Therapy can be accessed via Telehealth, allowing you to receive care from the comfort and privacy of your own home.</p>
+      <div class="service-card">
+        <a href="services.html">
+          <div class="service-card-img">
+            <img src="images/emdr-telehealth.png" alt="EMDR Therapy Telehealth">
+          </div>
+          <div class="service-card-body">
+            <h3>EMDR Therapy | Telehealth</h3>
+            <p class="service-price">$149.00</p>
+            <p>EMDR Therapy can be accessed via Telehealth. You will be sent a link prior to your appointment. Our Telehealth platforms are secure and fully encrypted.</p>
+            <span class="service-link">Book →</span>
+          </div>
+        </a>
       </div>
 
-      <div class="service-card reveal">
-        <img src="images/emdr-inperson.png" alt="EMDR In-Person" />
-        <h3>EMDR Therapy | In-Person.</h3>
-        <p class="service-price">Enquire</p>
-        <p>EMDR sessions in-person are located at our practice in the Northern Suburbs. A warm and welcoming environment awaits you.</p>
+      <div class="service-card">
+        <a href="services.html">
+          <div class="service-card-img">
+            <img src="images/emdr-inperson.png" alt="EMDR Therapy In-Person">
+          </div>
+          <div class="service-card-body">
+            <h3>EMDR Therapy | In-Person.</h3>
+            <p class="service-price">Enquire</p>
+            <p>EMDR sessions in-person are located at our practice in the Northern Suburbs of Perth. Free parking and bathroom facilities available onsite.</p>
+            <span class="service-link">Enquire →</span>
+          </div>
+        </a>
       </div>
 
-      <div class="service-card reveal">
-        <img src="images/emdr-therapy2.png" alt="EMDR At Home" />
-        <h3>EMDR Therapy | At Home</h3>
-        <p class="service-price">&nbsp;</p>
-        <p>Please enquire via email about this service as particular conditions apply.</p>
+      <div class="service-card">
+        <a href="contact.html">
+          <div class="service-card-img">
+            <img src="images/emdr-therapy2.png" alt="EMDR Therapy At Home">
+          </div>
+          <div class="service-card-body">
+            <h3>EMDR Therapy | At Home</h3>
+            <p class="service-price">Enquire</p>
+            <p>Please enquire via email about this service as particular conditions do apply.</p>
+            <span class="service-link">Enquire →</span>
+          </div>
+        </a>
       </div>
 
     </div>
@@ -73,36 +92,54 @@
 
   <!-- INFO BLURB -->
   <section class="info-blurb">
-    <p class="reveal">All EMDR sessions are 55 minutes or 90 minutes long. Our EMDR therapists are fully trained and qualified in EMDR. If you have a GP mental health plan and Medicare, a rebate may apply.</p>
+    <p>All EMDR sessions are 55 minutes or 90 minutes long. Our EMDR therapists are fully trained and qualified in EMDR.&nbsp; If you have a GP mental health plan and Medicare, a rebate may apply.</p>
   </section>
 
-  <!-- BOOKING / CONTACT -->
-  <section class="booking" id="book">
-    <div class="booking-inner">
-      <h2 class="reveal">Book an appointment here.</h2>
-      <p class="reveal">Send us an appointment request or send an enquiry and we'll reply within two business days.</p>
+  <!-- BOOKING SECTION -->
+  <section class="booking-section" id="book">
+    <h2>Book an appointment here.</h2>
+    <p class="booking-sub">Send us an appointment request or send an enquiry and we'll reply within two business days.</p>
 
-      <form class="contact-form reveal" novalidate>
-        <div class="form-row">
-          <input type="text" name="first_name" placeholder="First Name" required />
-          <input type="text" name="last_name" placeholder="Last Name" required />
+    <form class="booking-form" id="booking-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name <span class="req">(required)</span></label>
+          <input type="text" name="first_name" required>
         </div>
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-
-      <div class="form-success">
-        Thank you — we'll be in touch within two business days.
+        <div class="form-group">
+          <label>Last Name <span class="req">(required)</span></label>
+          <input type="text" name="last_name" required>
+        </div>
       </div>
-    </div>
+      <div class="form-group">
+        <label>Email <span class="req">(required)</span></label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label>Phone <span class="req">(required)</span></label>
+        <input type="tel" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label>Message <span class="req">(required)</span></label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+      <div class="form-success" id="form-success">Thank you — we'll be in touch within two business days.</div>
+    </form>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <span class="footer-logo">Perth EMDR Therapy</span>
-    <small>&copy; 2024 Perth EMDR Therapy. All rights reserved.</small>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Perth EMDR Therapy</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2025 Perth EMDR Therapy. All rights reserved.</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
