@@ -1,64 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Perth EMDR Therapy</title>
-  <meta name="description" content="Get in touch with Perth EMDR Therapy. Book an appointment or send an enquiry and we'll reply within two business days." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Perth EMDR Therapy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav class="nav">
     <a href="index.html" class="nav-logo">Perth EMDR Therapy</a>
-    <button class="hamburger" aria-label="Open menu">
+    <div class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
-  <!-- NAV OVERLAY -->
-  <div class="nav-overlay" role="dialog" aria-label="Navigation menu">
-    <button class="nav-close" aria-label="Close menu">&times;</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="index.html#services">Services</a>
-    <a href="index.html#book">Book Now</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Contact & Appointments</h1>
+  </section>
 
-  <!-- PAGE HEADER -->
-  <div class="page-header">
-    <h1 class="reveal">Get in Touch</h1>
-    <p class="reveal">Send us an appointment request or enquiry and we'll reply within two business days.</p>
-  </div>
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="contact-wrapper">
+      <div class="contact-form-section">
+        <h2>Send us an enquiry</h2>
+        <p>We'll reply within two business days.</p>
 
-  <!-- CONTACT FORM -->
-  <section class="contact-section">
-    <div class="booking-inner">
-      <form class="contact-form reveal" novalidate>
-        <div class="form-row">
-          <input type="text" name="first_name" placeholder="First Name" required />
-          <input type="text" name="last_name" placeholder="Last Name" required />
-        </div>
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone" />
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
+        <form class="booking-form" id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name <span class="req">(required)</span></label>
+              <input type="text" name="first_name" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name <span class="req">(required)</span></label>
+              <input type="text" name="last_name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email <span class="req">(required)</span></label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Phone <span class="req">(required)</span></label>
+            <input type="tel" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label>Message <span class="req">(required)</span></label>
+            <textarea name="message" rows="5" placeholder="Tell us about what brings you here..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+          <div class="form-success" id="form-success">Thank you — we'll be in touch within two business days.</div>
+        </form>
+      </div>
 
-      <div class="form-success">
-        Thank you — we'll be in touch within two business days.
+      <div class="contact-info-section">
+        <h2>Practice Information</h2>
+        
+        <h3>Location</h3>
+        <p><strong>Address:</strong> 1c 73 Gibson Avenue, Padbury WA</p>
+        <p><strong>Parking:</strong> Free parking available</p>
+
+        <h3>Hours</h3>
+        <ul class="hours-list">
+          <li><strong>Monday:</strong> 9:30am – 2:30pm</li>
+          <li><strong>Tuesday:</strong> 9:30am – 2:30pm</li>
+          <li><strong>Wednesday:</strong> 9:30am – 5:30pm</li>
+          <li><strong>Thursday:</strong> Telehealth 9:00am – 2:30pm</li>
+          <li><strong>Saturday:</strong> Please enquire</li>
+        </ul>
+
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> <a href="mailto:nicolehannpsychology@gmail.com">nicolehannpsychology@gmail.com</a></p>
+
+        <h3>When You Arrive</h3>
+        <p>My front glass door is generally locked until a couple of minutes before your appointment time. You are welcome to wait outside on the stairs until your appointment. If the door is unlocked please come in and take a seat until I come into the reception area to get you.</p>
+
+        <h3>What to Bring</h3>
+        <p>Please bring your referral or care plan and your Medicare card. For session cost please refer to your initial email.</p>
+
+        <h3>Telehealth Availability</h3>
+        <p>I currently have immediate telehealth availability. Telehealth sessions are conducted via secure, fully encrypted platforms. You will receive a link prior to your appointment.</p>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <span class="footer-logo">Perth EMDR Therapy</span>
-    <small>&copy; 2024 Perth EMDR Therapy. All rights reserved.</small>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Perth EMDR Therapy</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2025 Perth EMDR Therapy. All rights reserved.</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

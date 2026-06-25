@@ -1,176 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — Perth EMDR Therapy</title>
-  <meta name="description" content="EMDR Therapy via Telehealth ($149/session) and In-Person in Perth's Northern Suburbs. Evidence-based trauma treatment by Nicole Hann." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Perth EMDR Therapy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ========== NAV ========== -->
-<nav class="nav">
-  <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">
-      Perth EMDR Therapy
-      <span>Nicole Hann Psychology</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html" class="btn-nav">Book Now</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Perth EMDR Therapy</a>
+    <div class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  </div>
-</nav>
-<div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn-mobile">Book Now</a>
-</div>
-
-<!-- ========== PAGE HERO ========== -->
-<section class="page-hero">
-  <div class="container">
-    <span class="eyebrow" style="color:var(--sage);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:12px;">What We Offer</span>
-    <h1>Our Services</h1>
-    <p>Evidence-based EMDR therapy, available in-person in Perth or via secure telehealth Australia-wide.</p>
-  </div>
-</section>
-
-<!-- ========== SERVICE CARDS ========== -->
-<section class="section">
-  <div class="container">
-    <div class="service-cards">
-      <div class="service-card featured reveal">
-        <div class="icon">💻</div>
-        <h3>EMDR Therapy — Telehealth</h3>
-        <div class="price">$149 per session</div>
-        <p>EMDR Therapy can be accessed via Telehealth. You will be sent a secure link prior to your appointment. Our Telehealth platforms are secure and fully encrypted.</p>
-        <p class="note">Available to clients anywhere in Australia.</p>
-        <a href="contact.html" class="btn btn-primary">Book Now</a>
-      </div>
-      <div class="service-card reveal">
-        <div class="icon">🌿</div>
-        <h3>EMDR Therapy — In-Person</h3>
-        <div class="price">Enquire for pricing</div>
-        <p>EMDR sessions in-person are located at our practice in the Northern Suburbs of Perth. Free parking and bathroom facilities available onsite.</p>
-        <p class="note">Please enquire via email about this service as particular conditions apply.</p>
-        <a href="contact.html" class="btn btn-secondary">Enquire Now</a>
-      </div>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ========== WHAT IS EMDR ========== -->
-<section class="section what-is-emdr">
-  <div class="container">
-    <div class="inner">
-      <div class="section-header centered reveal">
-        <span class="eyebrow">About the Therapy</span>
-        <h2>What is EMDR?</h2>
-      </div>
-      <div class="reveal">
-        <blockquote>
-          Eye Movement Desensitisation and Reprocessing (EMDR) is an evidence-based psychotherapy approach that has been extensively researched and proven effective for treating trauma and PTSD. Recommended by the World Health Organisation (WHO), EMDR helps the brain process traumatic memories that have become 'stuck', reducing their emotional intensity and allowing for healing and integration.
-        </blockquote>
-      </div>
-      <div class="reveal" style="margin-top:32px; display:grid; grid-template-columns: repeat(3,1fr); gap:24px; text-align:left;">
-        <div class="card" style="padding:28px;">
-          <div class="card-icon">🧠</div>
-          <h3 style="font-size:1rem; margin-bottom:8px;">How It Works</h3>
-          <p style="font-size:.88rem">EMDR uses bilateral stimulation (eye movements, taps or tones) to help the brain reprocess distressing memories at a neurological level.</p>
-        </div>
-        <div class="card" style="padding:28px;">
-          <div class="card-icon">⏱️</div>
-          <h3 style="font-size:1rem; margin-bottom:8px;">Session Structure</h3>
-          <p style="font-size:.88rem">Sessions are 50–90 minutes. Initial sessions focus on history-taking, preparation and building coping resources before processing begins.</p>
-        </div>
-        <div class="card" style="padding:28px;">
-          <div class="card-icon">🏆</div>
-          <h3 style="font-size:1rem; margin-bottom:8px;">WHO Endorsed</h3>
-          <p style="font-size:.88rem">EMDR is on the WHO's list of recommended treatments for trauma. It's one of the most researched psychotherapy approaches in the world.</p>
-        </div>
-      </div>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>Services</h1>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="content-wrapper">
+      <h2>EMDR & Trauma-Informed Therapy</h2>
+      
+      <h3>Eye Movement Desensitisation and Reprocessing (EMDR)</h3>
+      <p>I am fully trained in EMDR and advanced EMDR, qualified to perform EMDR, which is currently one of the leading evidence-based treatments for adverse life events, PTSD, C-PTSD, childhood trauma, negative or stuck beliefs, OCD, Anxiety, Phobias and many other conditions.</p>
+
+      <p>For standard EMDR please allow a minimum of 10 sessions. This includes assessment, identifying targets/goals, increasing your resources, performing eye movements, installation and enough time to debrief and close EMDR smoothly.</p>
+
+      <p><strong>To learn more about EMDR or to book an appointment for EMDR please go to <a href="https://www.perthemdr.com.au">www.perthemdr.com.au</a></strong></p>
+
+      <h3>Individual Therapy & Assessment</h3>
+      <p>I work primarily with adults, offering individual therapy and psychological assessment services. Sessions are available in-person at my Padbury practice or via secure Telehealth.</p>
+
+      <h3>Telehealth Sessions</h3>
+      <p>Telehealth sessions are available and I currently have immediate availability. Sessions are conducted via secure, fully encrypted platforms. You will receive a link prior to your appointment.</p>
+
+      <h3>Session Details</h3>
+      <ul class="session-list">
+        <li><strong>Individual Consult:</strong> 55 minutes — $240</li>
+        <li><strong>Assessment Session:</strong> 55 minutes — $250 (Note: 3–4 sessions required, includes feedback session)</li>
+        <li><strong>EMDR:</strong> 55 minutes — $240</li>
+        <li><strong>EMDR:</strong> 75 minutes — $295</li>
+      </ul>
+
+      <p>Medicare rebates may apply if you have a Mental Health Care Plan. Please contact me for more information about fees and rebates.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ========== WHO CAN BENEFIT ========== -->
-<section class="section who-benefits">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="eyebrow">Is EMDR Right for You?</span>
-      <h2>Who Can Benefit</h2>
-      <p>EMDR has been shown to be effective for a wide range of presentations, not just classic PTSD.</p>
-    </div>
-    <div class="benefits-list reveal">
-      <span class="benefit-item">Trauma &amp; PTSD</span>
-      <span class="benefit-item">Childhood Trauma</span>
-      <span class="benefit-item">Anxiety</span>
-      <span class="benefit-item">Depression</span>
-      <span class="benefit-item">Grief</span>
-      <span class="benefit-item">Phobias</span>
-      <span class="benefit-item">Birth Trauma</span>
-      <span class="benefit-item">Perinatal Stress</span>
-      <span class="benefit-item">Chronic Pain</span>
-      <span class="benefit-item">Stress &amp; Burnout</span>
-    </div>
-  </div>
-</section>
-
-<!-- ========== CTA BANNER ========== -->
-<section class="cta-banner reveal">
-  <div class="container">
-    <h2>Not sure which option is right for you?</h2>
-    <p style="color:rgba(255,255,255,0.8);margin-bottom:28px;font-size:1rem;">Reach out and we'll help you figure out the best path forward.</p>
-    <a href="contact.html" class="btn btn-outline-white">Get in Touch</a>
-  </div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="nav-logo">Perth EMDR Therapy<span>Nicole Hann Psychology</span></div>
-        <p>Warm, evidence-based therapy for individuals, couples and families.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@perthemdr.com.au">info@perthemdr.com.au</a></li>
-          <li><span style="color:rgba(255,255,255,0.5);font-size:.88rem">Northern Suburbs, Perth WA</span></li>
-          <li><span style="color:rgba(255,255,255,0.5);font-size:.88rem">Telehealth: Australia-wide</span></li>
-        </ul>
-      </div>
+      <span class="footer-logo">Perth EMDR Therapy</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2025 Perth EMDR Therapy. All rights reserved.</span>
     </div>
-    <div class="footer-bottom">
-      <span>© 2025 Perth EMDR Therapy. All rights reserved.</span>
-      <span>A practice of Nicole Hann Psychology</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

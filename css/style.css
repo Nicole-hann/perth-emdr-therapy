@@ -45,8 +45,26 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-hamburger {
+.nav-desktop {
   display: flex;
+  gap: 32px;
+}
+
+.nav-desktop a {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.nav-desktop a:hover { opacity: 0.6; }
+
+.nav-hamburger {
+  display: none;
   flex-direction: column;
   gap: 5px;
   background: none;
@@ -347,6 +365,111 @@ body {
   text-align: center;
 }
 
+/* ---- PAGE HERO ---- */
+.page-hero {
+  background: var(--bg);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+/* ---- PAGE CONTENT ---- */
+.page-content {
+  background: var(--bg);
+  padding: 48px 40px 80px;
+}
+
+.content-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.page-content h2 {
+  font-family: var(--serif);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.page-content h2:first-child { margin-top: 0; }
+
+.page-content h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text);
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.page-content p {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.page-content a {
+  color: var(--text);
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.page-content a:hover { opacity: 0.6; }
+
+.therapy-list, .focus-list, .session-list, .hours-list {
+  margin: 18px 0 20px 20px;
+  list-style: none;
+}
+
+.therapy-list li, .focus-list li, .session-list li, .hours-list li {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.therapy-list li::before, .focus-list li::before, .session-list li::before, .hours-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text);
+}
+
+/* ---- CONTACT PAGE LAYOUT ---- */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contact-form-section, .contact-info-section {
+  padding: 0;
+}
+
+.contact-info-section h2 {
+  margin-top: 0;
+}
+
+.contact-info-section h3 {
+  margin-top: 24px;
+}
+
 /* ---- FOOTER ---- */
 .footer {
   background: var(--bg);
@@ -404,6 +527,8 @@ body {
 
 /* ---- MOBILE ---- */
 @media (max-width: 768px) {
+  .nav-desktop { display: none; }
+  .nav-hamburger { display: flex; }
   .hero {
     grid-template-columns: 1fr;
   }
@@ -428,6 +553,12 @@ body {
 
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-nav { flex-wrap: wrap; gap: 16px; }
+
+  .contact-wrapper { grid-template-columns: 1fr; gap: 40px; }
+
+  .page-hero { padding: 48px 20px; }
+  .page-content { padding: 32px 20px 56px; }
+  .content-wrapper { margin: 0 auto; }
 }
 
 @media (max-width: 480px) {

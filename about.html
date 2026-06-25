@@ -1,55 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Perth EMDR Therapy</title>
-  <meta name="description" content="Meet Nicole, our endorsed Counselling Psychologist with 10 years of private practice experience specialising in EMDR and trauma-informed care." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Perth EMDR Therapy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav class="nav">
     <a href="index.html" class="nav-logo">Perth EMDR Therapy</a>
-    <button class="hamburger" aria-label="Open menu">
+    <div class="nav-desktop">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
-  <!-- NAV OVERLAY -->
-  <div class="nav-overlay" role="dialog" aria-label="Navigation menu">
-    <button class="nav-close" aria-label="Close menu">&times;</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="index.html#services">Services</a>
-    <a href="index.html#book">Book Now</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>About</h1>
+  </section>
 
-  <!-- PAGE HEADER -->
-  <div class="page-header">
-    <h1 class="reveal">About Nicole</h1>
-    <p class="reveal">Endorsed Counselling Psychologist with a passion for EMDR and trauma-informed care.</p>
-  </div>
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="content-wrapper">
+      <h2>About Nicole & Perth EMDR Therapy</h2>
+      
+      <h3>My Background</h3>
+      <p>I have been in private practice for eight years, with earlier experience in counselling roles. I am dedicated to supporting individuals — primarily adults, and have a particular interest in working with those who have experienced trauma in earlier stages of life.</p>
 
-  <!-- ABOUT CONTENT -->
-  <section class="about-section">
-    <div class="about-inner">
-      <h2 class="reveal">A warm and welcoming approach to healing</h2>
-      <p class="reveal">Nicole is an endorsed Counselling Psychologist who has been in private practice for over 10 years. With a special interest in EMDR (Eye Movement Desensitisation and Reprocessing) and trauma-informed interventions, she brings both expertise and genuine warmth to every therapeutic relationship.</p>
-      <p class="reveal">Nicole founded Perth EMDR Therapy with a vision to create a warm, welcoming, and professional space where clients feel safe to begin their healing journey. She is currently building a team of like-minded therapists and Psychologists who share this commitment to high-quality, evidence-based care.</p>
-      <p class="reveal">Perth EMDR Therapy is actively recruiting qualified Psychologists and EMDR therapists who align with our values of compassion, professionalism, and client-centred practice.</p>
-      <p class="reveal">All of our therapists are fully trained and qualified in EMDR, and we work closely with each client to create a treatment plan that feels right for them — whether that's telehealth, in-person, or an at-home service.</p>
+      <p>I prioritise creating a therapeutic space that feels safe, supportive, and person-centred. My approach integrates a range of evidence-based modalities, including attachment-based therapy, EMDR, Internal Family Systems, Schema Therapy, mindfulness, and compassion-focused therapy.</p>
+
+      <p>I place strong importance on building a genuine therapeutic relationship, as I believe this is the foundation for meaningful, in-depth work and lasting change.</p>
+
+      <h3>Perth EMDR Therapy</h3>
+      <p>Perth EMDR Therapy was founded with a vision to create a warm, welcoming, and professional space for clients to begin their healing journey. I am currently building a team of like-minded therapists and Psychologists who share the same therapeutic values and believe that the therapeutic alliance is the foundation for effective treatment and meaningful change.</p>
+
+      <p>Perth EMDR Therapy is actively recruiting qualified Psychologists and EMDR therapists who align with our values of compassion, professionalism, and client-centred practice.</p>
+
+      <h3>My Therapeutic Approach</h3>
+      <ul class="therapy-list">
+        <li>Attachment-Based Therapy</li>
+        <li>EMDR (Eye Movement Desensitisation and Reprocessing)</li>
+        <li>Internal Family Systems (IFS)</li>
+        <li>Schema Therapy</li>
+        <li>Mindfulness</li>
+        <li>Compassion-Focused Therapy</li>
+      </ul>
+
+      <h3>Focus Areas</h3>
+      <ul class="focus-list">
+        <li>Trauma and PTSD</li>
+        <li>Childhood trauma including developmental/relational trauma</li>
+        <li>Grief and Loss</li>
+        <li>Interpersonal difficulties</li>
+        <li>Anxiety including Social Anxiety</li>
+        <li>Women's Health including PMDD and Endometriosis counselling</li>
+        <li>Low mood and Mood Disorders including Depression and Bipolar Disorder</li>
+        <li>Stress and burnout</li>
+        <li>Phobias</li>
+        <li>Health anxiety and death anxiety</li>
+        <li>Perinatal stress, anxiety and adjustment</li>
+        <li>Birth trauma</li>
+        <li>Working with and supporting parents to foster healthy relationships & attachment</li>
+        <li>Pain and chronic pain</li>
+      </ul>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <span class="footer-logo">Perth EMDR Therapy</span>
-    <small>&copy; 2024 Perth EMDR Therapy. All rights reserved.</small>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Perth EMDR Therapy</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <span class="footer-copy">© 2025 Perth EMDR Therapy. All rights reserved.</span>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
