@@ -4,174 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Perth EMDR Therapy</title>
-  <meta name="description" content="Book a session or send an enquiry to Perth EMDR Therapy. Telehealth and in-person appointments available." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta name="description" content="Get in touch with Perth EMDR Therapy. Book an appointment or send an enquiry and we'll reply within two business days." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ========== NAV ========== -->
-<nav class="nav">
-  <div class="container nav-inner">
-    <a href="index.html" class="nav-logo">
-      Perth EMDR Therapy
-      <span>Nicole Hann Psychology</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html" class="btn-nav">Book Now</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Perth EMDR Therapy</a>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
+  </nav>
+
+  <!-- NAV OVERLAY -->
+  <div class="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <button class="nav-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#book">Book Now</a>
+    <a href="contact.html">Contact</a>
   </div>
-</nav>
-<div class="mobile-menu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn-mobile">Book Now</a>
-</div>
 
-<!-- ========== PAGE HERO ========== -->
-<section class="page-hero">
-  <div class="container">
-    <span class="eyebrow" style="color:var(--sage);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:12px;">We're Here</span>
-    <h1>Ready to Talk?</h1>
-    <p>Have questions or feel it's time to start your therapy journey? Send us a note and we'll get back to you soon.</p>
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1 class="reveal">Get in Touch</h1>
+    <p class="reveal">Send us an appointment request or enquiry and we'll reply within two business days.</p>
   </div>
-</section>
 
-<!-- ========== CONTACT SECTION ========== -->
-<section class="section">
-  <div class="container">
-    <div class="contact-grid">
-
-      <!-- Form -->
-      <div class="reveal">
-        <div class="contact-form">
-          <h2 style="font-size:1.6rem;margin-bottom:8px;">Send a Message</h2>
-          <p style="color:var(--text-light);font-size:.9rem;margin-bottom:32px;">We'll respond within 1–2 business days.</p>
-
-          <form id="contact-form" action="#" novalidate>
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" placeholder="04xx xxx xxx" required />
-            </div>
-            <div class="form-group">
-              <label for="message">What brings you here? *</label>
-              <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for support with. There's no right or wrong answer — we're here to help." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-          </form>
-
-          <div class="form-success" id="form-success">
-            ✅ Thank you! We've received your message and will be in touch within 1–2 business days.
-          </div>
+  <!-- CONTACT FORM -->
+  <section class="contact-section">
+    <div class="booking-inner">
+      <form class="contact-form reveal" novalidate>
+        <div class="form-row">
+          <input type="text" name="first_name" placeholder="First Name" required />
+          <input type="text" name="last_name" placeholder="Last Name" required />
         </div>
-      </div>
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
 
-      <!-- Sidebar -->
-      <div class="reveal">
-        <h3>Practice Information</h3>
-
-        <div class="info-item">
-          <div class="info-icon">📍</div>
-          <div>
-            <h4>Location</h4>
-            <p>Northern Suburbs, Perth WA<br />Free on-site parking available</p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">💻</div>
-          <div>
-            <h4>Telehealth</h4>
-            <p>Available Australia-wide via secure, encrypted platforms</p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">🕐</div>
-          <div>
-            <h4>Consulting Hours</h4>
-            <p>Monday, Tuesday, Wednesday<br />+ Saturday (once monthly)</p>
-          </div>
-        </div>
-
-        <div class="info-item">
-          <div class="info-icon">✉️</div>
-          <div>
-            <h4>Email</h4>
-            <p><a href="mailto:info@perthemdr.com.au" style="color:var(--sage)">info@perthemdr.com.au</a></p>
-          </div>
-        </div>
-
-        <div class="availability-badge">
-          <div style="font-weight:600;font-size:1rem;">
-            <span class="badge-dot"></span>
-            Immediate Telehealth Availability
-          </div>
-          <p>Telehealth sessions are available now. No waitlist for online appointments.</p>
-        </div>
-
-        <div style="margin-top:32px; background:var(--cream); border-radius:16px; padding:24px;">
-          <h4 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:12px;">Not sure where to start?</h4>
-          <p style="font-size:.9rem;color:var(--text-mid);">That's completely okay. Send us a message and we'll help you figure out what kind of support would suit you best. There's no commitment required.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ========== FOOTER ========== -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="nav-logo">Perth EMDR Therapy<span>Nicole Hann Psychology</span></div>
-        <p>Warm, evidence-based therapy for individuals, couples and families.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:info@perthemdr.com.au">info@perthemdr.com.au</a></li>
-          <li><span style="color:rgba(255,255,255,0.5);font-size:.88rem">Northern Suburbs, Perth WA</span></li>
-          <li><span style="color:rgba(255,255,255,0.5);font-size:.88rem">Telehealth: Australia-wide</span></li>
-        </ul>
+      <div class="form-success">
+        Thank you — we'll be in touch within two business days.
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2025 Perth EMDR Therapy. All rights reserved.</span>
-      <span>A practice of Nicole Hann Psychology</span>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="js/main.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Perth EMDR Therapy</span>
+    <small>&copy; 2024 Perth EMDR Therapy. All rights reserved.</small>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
